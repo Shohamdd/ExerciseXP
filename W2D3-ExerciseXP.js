@@ -44,8 +44,12 @@ console.log(building.numberOfFloors)
 console.log(building.numberOfAptByFloor.firstFloor)
 console.log(building.numberOfAptByFloor.thirdFloor)
 console.log(building.nameOfTenants[1])
-console.log(building.nameOfTenants.numberOfRoomsAndRent)
-console.log(building.numberOfRoomsAndRent.dan)
+console.log(building.numberOfRoomsAndRent.dan[0])
+let sum = building.numberOfRoomsAndRent.sarah[1]+building.numberOfRoomsAndRent.david[1];
+if (sum>building.numberOfRoomsAndRent.dan[1]){
+    building.numberOfRoomsAndRent.dan[1]=1200;
+    console.log(building.numberOfRoomsAndRent.dan[1]);
+}
 
 //Exercise5
 let family = {
