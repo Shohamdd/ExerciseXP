@@ -10,7 +10,7 @@ for (let n=0; n<array.length+2; n++){
   if (n==0|| n==array.length+1){
     console.log("*".repeat(box_width+4));
   } else {
-  console.log("* " + array[n] + " *"));
+  console.log("* " + array[n] + " *");
   }
 
 }
