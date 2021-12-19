@@ -65,3 +65,25 @@ function myBill(){
     console.log(total);
 }
 myBill();
+
+//Ex5
+const detailsMoney = [0.25,0.10,0.05,0.01]
+
+function changeEnough(itemPrice, amountOfChange){
+	let sumMoney = 0;
+
+	for(let i = 0; i < amountOfChange.length; i++){
+		let moneyWorth = amountOfChange[i]*detailsMoney[i];
+		sumMoney += moneyWorth;
+	}
+
+	console.log("the total money i have in my wallet is : ", sumMoney)
+
+	if (sumMoney >= itemPrice){
+		return true;
+	} else {
+		return false;
+	}
+}
+
+console.log(changeEnough(5, [25, 20, 5, 0]));
