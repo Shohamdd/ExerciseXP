@@ -1,0 +1,11 @@
+(document).ready(function(){
+  ("input").keydown(function(){
+    ("input");
+  });
+  ("input").keyup(function(){
+    $("input");
+  });
+  ("#btn1").click(function(){
+    ("input").keydown();
+  });
+});
