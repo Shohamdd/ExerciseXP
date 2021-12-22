@@ -1,11 +1,9 @@
-(document).ready(function(){
-  ("input").keydown(function(){
-    ("input");
-  });
-  ("input").keyup(function(){
-    $("input");
-  });
-  ("#btn1").click(function(){
-    ("input").keydown();
-  });
-});
+let input = document.getElementById("text")
+input.addEventListener('keydown', logkey)
+
+function logkey(e){
+    console.log(e)
+    if (e.keyCode < 64 || e.keyCode > 91){
+        console.log(e.key)
+    }
+}
